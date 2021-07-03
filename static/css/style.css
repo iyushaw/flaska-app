@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.login-area {
+    margin: 250px 300px;
+    width: 35rem;
+
+}
+
+.register-area {
+    margin: 200px 300px;
+    width: 35rem;
+}
+
+.register-area button, .login-area button {
+    width: 100%;
+    height: 50px;
+}
+
+.register-area button:hover, .login-area button:hover {
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: larger;
+}

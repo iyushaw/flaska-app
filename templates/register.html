@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+<title>{% block title %} {{ title }} {% endblock %}</title>
+
+{% block content %}
+
+<form method="POST" action="/register" class="register-area">
+<h1>{{ title }}</h1>
+  {{ form.hidden_tag() }}
+    <div class="mb-3">
+      {{ form.first_name.label }}
+      {{ form.first_name }}
+    </div>
+
+    <div class="mb-3">
+        {{ form.last_name.label }}
+        {{ form.last_name }}
+    </div>
+
+    <div class="mb-3">
+        {{ form.username.label }}
+        {{ form.username }}
+    </div>
+
+    <div class="mb-3">
+      {{ form.password.label }}
+      {{ form.password }}
+    </div>
+
+    <div class="mb-3">
+        {{ form.confirm_password.label }}
+        {{ form.confirm_password }}
+    </div>
+
+    <div class="mb-3">
+        {{ form.submit }}
+    </div>
+  </form>
+
+{% endblock %}
